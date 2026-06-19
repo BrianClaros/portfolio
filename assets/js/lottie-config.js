@@ -5,17 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
   container.style.opacity = '0';
   container.style.transition = 'opacity 1s ease';
 
-  setTimeout(() => {
-    lottie.loadAnimation({
-      container,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'assets/animations/developer.json'
-    });
+  lottie.loadAnimation({
+    container,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/animations/developer.json'
+  });
 
-    requestAnimationFrame(() => {
-      container.style.opacity = '1';
-    });
-  }, 1500);
+  requestAnimationFrame(() => {
+    container.style.opacity = '1';
+  });
 });
