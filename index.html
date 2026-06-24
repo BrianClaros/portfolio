@@ -1,466 +1,94 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="es">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Brian Alejandro Claros Maldonado | Software Engineer</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link href="assets/css/main.css" rel="stylesheet" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Brian Claros — Software Engineer especializado en Full-Stack, AI Integrations, Python, TypeScript, Django y React.">
+  <title>Brian Claros | Full-Stack & AI Integrations</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    .case-study-primary { background: linear-gradient(135deg, rgba(24, 47, 76, .92), rgba(17, 24, 39, .9)); }
-    .case-study__eyebrow { display: block; margin-bottom: 1rem; color: rgb(76 215 246); font-family: "Space Grotesk", sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-    .case-study__details { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .case-study__details > div { padding: 1rem; border-radius: .75rem; background: rgba(5, 15, 26, .5); }
-    .case-study__details span { display: block; margin-bottom: .5rem; color: rgb(140 144 159); font-family: "Space Grotesk", sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    .case-study__details p { color: rgb(194 198 214); font-size: .875rem; line-height: 1.55; }
-    .tag { border-radius: .25rem; background: rgba(76, 215, 246, .1); padding: .25rem .75rem; color: rgb(76 215 246); font-family: "Space Grotesk", sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .05em; }
+    :root{--bg:#091321;--surface:#101f32;--surface-2:#162a43;--text:#eef4fb;--muted:#a7b7ca;--line:#29435f;--blue:#55d9ff;--coral:#ff846d;--yellow:#ffd564;--mint:#c7ff62}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--text);font-family:Outfit,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.mono,.nav a,.eyebrow,.tag,.period{font-family:"DM Mono",monospace;letter-spacing:.04em}.nav{height:80px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;font-size:.95rem}.brand i{color:var(--coral);font-style:normal}.nav-links{display:flex;gap:26px}.nav a{color:var(--muted);font-size:.68rem}.nav a:hover{color:var(--blue)}.nav-cv,.lang-toggle{padding:8px 11px;border:1px solid var(--line);background:transparent;color:var(--text);font:500 .67rem "DM Mono",monospace}.lang-toggle{cursor:pointer}.nav-actions{display:flex;gap:8px}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;padding:98px 0 76px}.available{display:inline-flex;gap:8px;align-items:center;margin-bottom:22px;padding:6px 9px;border:1px solid #36526f;border-radius:99px;color:var(--muted);font:500 .67rem "DM Mono",monospace}.available i{width:7px;height:7px;border-radius:50%;background:var(--mint)}h1,h2,h3,p{margin:0}.role-label{color:var(--blue);font:500 .83rem "DM Mono",monospace}.hero h1{max-width:700px;margin-top:16px;font-size:clamp(3.5rem,6.6vw,6.5rem);line-height:.9;letter-spacing:-.075em}.hero h1 em{font-family:Fraunces,serif;font-style:normal;color:var(--coral);font-weight:600}.hero-copy{max-width:610px;margin-top:25px;color:var(--muted);font-size:1.13rem}.hero-copy strong{color:var(--text)}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}.button{padding:13px 17px;background:var(--mint);color:#081322;border-radius:3px;font-weight:800;font-size:.86rem}.button.alt{background:transparent;border:1px solid var(--line);color:var(--text)}.signal{position:relative;min-height:350px;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#142c46,#0b1727);overflow:hidden}.signal:before{content:"";position:absolute;inset:32px;border:1px solid rgba(85,217,255,.28);border-radius:50%;box-shadow:0 0 0 42px rgba(85,217,255,.035),0 0 0 84px rgba(255,132,109,.025)}.signal-title{position:relative;z-index:1;color:var(--blue);font:500 .68rem "DM Mono",monospace}.signal-bc{position:absolute;z-index:1;right:30px;bottom:15px;font:700 8.5rem/.75 Fraunces,serif;letter-spacing:-.12em;color:var(--text)}.signal-bars{position:absolute;z-index:2;left:24px;bottom:27px;display:flex;align-items:end;gap:8px;height:105px}.signal-bars i{width:19px;background:var(--coral)}.signal-bars i:nth-child(1){height:30%}.signal-bars i:nth-child(2){height:64%;background:var(--yellow)}.signal-bars i:nth-child(3){height:44%}.signal-bars i:nth-child(4){height:94%;background:var(--blue)}.signal-bars i:nth-child(5){height:70%;background:var(--mint)}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.metric{min-width:0;min-height:125px;padding:24px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric b{display:block;font-size:2.35rem;letter-spacing:-.07em}.metric:nth-child(1) b{color:var(--blue)}.metric:nth-child(2) b{color:var(--coral)}.metric:nth-child(3) b{color:var(--yellow)}.metric:nth-child(4) b{color:var(--mint)}.metric span{display:block;overflow-wrap:anywhere;color:var(--muted);font:500 .65rem "DM Mono",monospace}section{padding:86px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:190px minmax(0,1fr);gap:30px;margin-bottom:42px}.eyebrow{color:var(--coral);font-size:.68rem}.section-head h2{font-size:2.15rem;line-height:1;letter-spacing:-.055em}.section-head h2 em{font-family:Fraunces,serif;color:var(--yellow);font-style:normal}.timeline{border-top:1px solid var(--line)}.job{display:grid;grid-template-columns:180px 225px minmax(0,1fr);gap:27px;padding:25px 0;border-bottom:1px solid var(--line)}.period{color:var(--muted);font-size:.67rem}.job h3{font-size:1rem}.job b{display:block;color:var(--blue);font-size:.86rem}.job p{color:var(--muted);font-size:.91rem}.cases{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:15px}.case{padding:25px;min-height:310px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;justify-content:space-between}.case.main{grid-column:span 7;background:linear-gradient(140deg,#173551,#102037)}.case.side{grid-column:span 5}.case.wide{grid-column:span 8}.case.narrow{grid-column:span 4}.case-num{color:var(--coral);font:500 .67rem "DM Mono",monospace}.case h3{margin-top:10px;font-size:1.65rem;letter-spacing:-.05em}.case p{margin-top:11px;color:var(--muted);font-size:.9rem}.case-diagram{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:23px;padding:13px;border:1px solid #37536e;background:#0a1726;color:var(--blue);font:500 .65rem "DM Mono",monospace}.case-diagram span{padding:7px;border:1px solid #37536e}.case-diagram b{color:var(--mint)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:17px}.tag{padding:4px 7px;border:1px solid #39526b;color:var(--muted);font-size:.62rem}.stack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.stack article{padding:26px;background:var(--bg)}.stack h3{font:500 .68rem "DM Mono",monospace;color:var(--blue)}.stack p{margin-top:12px;color:var(--muted);font-size:.91rem}.about{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:70px}.about>p{font-size:1.35rem;color:var(--muted)}.about strong{color:var(--text)}.principles{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}.principles article{padding:18px 20px;background:var(--surface)}.principles b{display:block;color:var(--yellow);font:500 .68rem "DM Mono",monospace}.principles span{color:var(--muted);font-size:.88rem}.contact{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end;padding:80px 0}.contact h2{max-width:700px;font-size:clamp(2.8rem,6vw,5.2rem);line-height:.92;letter-spacing:-.07em}.contact h2 em{font-family:Fraunces,serif;color:var(--coral);font-style:normal}.contact p{max-width:570px;margin-top:19px;color:var(--muted)}.contact-links{display:flex;gap:14px;flex-wrap:wrap}.contact-links a{color:var(--blue);border-bottom:1px solid var(--blue);font:500 .68rem "DM Mono",monospace}.footer{padding:25px 0;color:var(--muted);font:500 .64rem "DM Mono",monospace}@media(max-width:760px){.wrap{width:min(100% - 32px,1120px)}.nav{height:70px}.nav-links a:nth-child(1),.nav-links a:nth-child(3){display:none}.hero{grid-template-columns:minmax(0,1fr);padding:64px 0}.hero>div,.section-head>*,.job>*,.case,.metric{min-width:0}.role-label{white-space:normal;font-size:.72rem}.hero h1{font-size:2.6rem}.hero-copy{font-size:1rem}.signal{min-height:215px}.signal-bc{right:18px;font-size:4.5rem}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:nth-child(2){border-right:0}.metric{min-height:105px;padding:18px}.section-head{grid-template-columns:minmax(0,1fr);gap:12px;margin-bottom:28px}.section-head h2{font-size:1.85rem}.job{grid-template-columns:minmax(0,1fr);gap:9px}.cases{display:block}.case{margin-bottom:15px;min-height:265px}.stack,.about,.contact{grid-template-columns:minmax(0,1fr)}.stack{gap:1px}.contact{align-items:start}.contact-links{margin-top:6px}.nav-cv{display:none}}
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 </head>
-
-<body class="text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
-  <!-- Navbar -->
-  <nav
-    class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm">
-    <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
-      <span class="font-h3 text-h3 font-bold text-on-surface">Brian Alejandro Claros Maldonado</span>
-      <div class="hidden md:flex items-center gap-base">
-        <a class="px-4 py-2 font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 rounded-lg"
-          href="#experience">Experiencia</a>
-        <a class="px-4 py-2 font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 rounded-lg"
-          href="#projects">Casos</a>
-        <a class="px-4 py-2 font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 rounded-lg"
-          href="#skills">Stack</a>
-        <a class="px-4 py-2 font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary/10 rounded-lg"
-          href="#contact">Contacto</a>
-      </div>
-      <div class="flex items-center gap-4">
-        <a
-          class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(173,198,255,0.4)] active:scale-95 transition-all"
-          href="CV_Brian.pdf" download="CV_Brian.pdf">Descargar CV</a>
-      </div>
-    </div>
-  </nav>
-  <main class="pt-32">
-    <!-- Hero Section -->
-    <section
-      class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-section-padding">
-      <div class="space-y-8">
-        <div class="flex flex-wrap gap-3">
-          <span
-            class="bg-primary/10 text-primary px-3 py-1 rounded-full text-label-caps font-label-caps flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            Disponible
-          </span>
-          <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-label-caps font-label-caps">Product
-            engineering</span>
-          <span class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-label-caps font-label-caps">+7 años</span>
-        </div>
-        <h1 class="font-h1 text-h1 text-white">Software Engineer orientado a <span class="text-primary">producto</span></h1>
-        <p class="text-body-lg text-on-surface-variant max-w-lg">
-          Soy Brian Claros, Ingeniero en Informática. Construyo aplicaciones web, integraciones y sistemas de negocio
-          con Python, Django, JavaScript y foco en rendimiento, trazabilidad y experiencia de usuario.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a
-            class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:shadow-[0_0_25px_rgba(173,198,255,0.3)] transition-all"
-            href="#contact">
-            Contactarme
-            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-          </a>
-          <a
-            class="border border-outline text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-container transition-all"
-            href="#projects">
-            Ver casos
-          </a>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
-        <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/20 blur-[100px] rounded-full"></div>
-        <div style="min-height: 380px;">
-          <div id="lottie-container" class="w-full h-full p-6"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Quick Metrics -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
-        <div class="glass-card p-6 rounded-2xl text-center group hover:border-primary/50 transition-all">
-          <p class="text-h1 font-h1 text-primary group-hover:scale-110 transition-transform">+7</p>
-          <p class="text-label-caps font-label-caps text-on-surface-variant">Años de Experiencia</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center group hover:border-secondary/50 transition-all">
-          <p class="text-h2 font-h2 text-secondary group-hover:scale-110 transition-transform">Miles</p>
-          <p class="text-label-caps font-label-caps text-on-surface-variant">Usuarios en SalesQL</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center group hover:border-tertiary/50 transition-all">
-          <p class="text-h2 font-h2 text-tertiary group-hover:scale-110 transition-transform">Full Stack</p>
-          <p class="text-label-caps font-label-caps text-on-surface-variant">Producto y sistemas</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center group hover:border-primary/50 transition-all">
-          <p class="text-h2 font-h2 text-primary group-hover:scale-110 transition-transform">Banca · SaaS</p>
-          <p class="text-label-caps font-label-caps text-on-surface-variant">Y operaciones</p>
-        </div>
-      </div>
-    </section>
-    <!-- Experience -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding" id="experience">
-      <h2 class="font-h2 text-h2 text-white mb-12 flex items-center gap-4">
-        <span class="w-12 h-0.5 bg-primary"></span> Experiencia Laboral
-      </h2>
-      <div
-        class="space-y-12 relative before:content-[''] before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-[2px] before:bg-outline-variant/30">
-        <!-- Devecoop -->
-        <div class="relative pl-12">
-          <div
-            class="absolute left-0 top-1.5 w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center border-2 border-primary z-10">
-            <span class="material-symbols-outlined text-primary text-xl" data-icon="work">work</span>
-          </div>
-          <div class="glass-card p-card-padding rounded-3xl">
-            <div class="flex flex-col md:flex-row md:justify-between mb-4 gap-2">
-              <div>
-                <h3 class="font-h3 text-h3 text-white">Devecoop</h3>
-                <p class="text-secondary font-medium">Socio · Desarrollador Full Stack</p>
-              </div>
-              <span
-                class="text-label-caps font-label-caps text-outline bg-surface-container px-3 py-1 rounded-full h-fit">2018
-                - Presente</span>
-            </div>
-            <p class="text-on-surface-variant mb-6">Desarrollo productos web y sistemas internos para SaaS, banca y
-              operaciones. Mi trabajo incluye extensiones de Chrome, pagos con Stripe, flujos conversacionales,
-              gestión de riesgo, permisos, testing y optimización de rendimiento.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">Python</span>
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">Django</span>
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">JavaScript</span>
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-        <!-- FreePreTrip -->
-        <div class="relative pl-12">
-          <div
-            class="absolute left-0 top-1.5 w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center border-2 border-outline-variant z-10">
-            <span class="material-symbols-outlined text-outline text-xl"
-              data-icon="travel_explore">travel_explore</span>
-          </div>
-          <div class="glass-card p-card-padding rounded-3xl">
-            <div class="flex flex-col md:flex-row md:justify-between mb-4 gap-2">
-              <div>
-                <h3 class="font-h3 text-h3 text-white">FreePreTrip</h3>
-                <p class="text-secondary font-medium">Full Stack Developer &amp; PWA Lead</p>
-              </div>
-              <span
-                class="text-label-caps font-label-caps text-outline bg-surface-container px-3 py-1 rounded-full h-fit">2019
-                - 2020</span>
-            </div>
-            <p class="text-on-surface-variant mb-6">Desarrollo de una PWA para digitalizar inspecciones previas al viaje
-              de autobuses escolares, con pantallas responsive y funcionalidades de backend.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">React.js</span>
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">PWA</span>
-              <span class="bg-secondary/10 text-secondary text-label-caps px-3 py-1 rounded">Python + Django</span>
-            </div>
-          </div>
-        </div>
-        <!-- Others -->
-        <div class="relative pl-12">
-          <div
-            class="absolute left-0 top-1.5 w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center border-2 border-outline-variant z-10">
-            <span class="material-symbols-outlined text-outline text-xl" data-icon="history">history</span>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass-card p-6 rounded-2xl">
-              <h4 class="font-bold text-white">Betterez</h4>
-              <p class="text-outline text-sm mb-2">Full Stack Developer · 2018–2019</p>
-              <p class="text-sm text-on-surface-variant">Plataforma de reservas y emisión de boletos. Integración,
-                rendimiento, refactorización y migración de bases de datos.
-              </p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl">
-              <h4 class="font-bold text-white">SAD</h4>
-              <p class="text-outline text-sm mb-2">Prácticas profesionales · 2016</p>
-              <p class="text-sm text-on-surface-variant">Funciones y panel de administración para un sistema de preguntas
-                frecuentes municipal.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Selected case studies -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding" id="projects">
-      <h2 class="font-h2 text-h2 text-white mb-12 text-right flex items-center justify-end gap-4">
-        Casos seleccionados <span class="w-12 h-0.5 bg-secondary"></span>
-      </h2>
-      <p class="text-body-lg text-on-surface-variant max-w-lg mb-12 ml-auto text-right">Cuatro sistemas donde trabajé
-        sobre problemas concretos de producto, operación e integración.</p>
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <article class="md:col-span-8 glass-card rounded-3xl p-card-padding case-study case-study-primary">
-          <span class="case-study__eyebrow">SaaS · 2020–2025</span>
-          <h3 class="font-h3 text-h3 text-white mb-4">SalesQL Extension</h3>
-          <p class="text-on-surface-variant mb-6">Extensión de Chrome para búsqueda y extracción de correos desde
-            LinkedIn, utilizada por miles de usuarios.</p>
-          <div class="case-study__details">
-            <div><span>Mi aporte</span><p>Desarrollé funcionalidades, optimicé rendimiento y estabilidad, acompañé la
-              migración de frontend e integré Stripe para suscripciones, webhooks y conciliación.</p></div>
-            <div><span>Resultado</span><p>Una experiencia más estable y ágil para un producto con usuarios reales y
-              flujos de monetización.</p></div>
-          </div>
-          <div class="flex flex-wrap gap-2 mt-6"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Vue.js</span><span class="tag">JavaScript</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Stripe</span></div>
-        </article>
-        <article class="md:col-span-4 glass-card rounded-3xl p-card-padding case-study">
-          <span class="case-study__eyebrow">Banca · 2025–2026</span>
-          <h3 class="font-h3 text-h3 text-white mb-4">Banco Rioja</h3>
-          <p class="text-on-surface-variant mb-6">Módulo interno para scoring y gestión de riesgo en la evaluación de clientes.</p>
-          <div class="case-study__details"><div><span>Mi aporte</span><p>Implementé funcionalidades backend y frontend para regularización, validación de información, permisos por perfil y trazabilidad.</p></div></div>
-          <div class="flex flex-wrap gap-2 mt-6"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">HTMX</span><span class="tag">Testing</span></div>
-        </article>
-        <article class="md:col-span-4 glass-card rounded-3xl p-card-padding case-study">
-          <span class="case-study__eyebrow">Automatización · 2026</span>
-          <h3 class="font-h3 text-h3 text-white mb-4">Bot de WhatsApp</h3>
-          <p class="text-on-surface-variant mb-6">Plataforma conversacional para gestionar participantes y flujos de concursos.</p>
-          <div class="case-study__details"><div><span>Mi aporte</span><p>Implementé la lógica de registros, sorteos y validaciones; además de flujos por estado, persistencia y procesamiento asíncrono.</p></div></div>
-          <div class="flex flex-wrap gap-2 mt-6"><span class="tag">WhatsApp API</span><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Celery</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span></div>
-        </article>
-        <article class="md:col-span-8 glass-card rounded-3xl p-card-padding case-study">
-          <span class="case-study__eyebrow">Operaciones · 2019–2020</span>
-          <h3 class="font-h3 text-h3 text-white mb-4">FreePreTrip</h3>
-          <p class="text-on-surface-variant mb-6">PWA para digitalizar inspecciones previas al viaje de autobuses escolares.</p>
-          <div class="case-study__details"><div><span>Mi aporte</span><p>Creé pantallas responsive y desarrollé, probé y evolucioné funcionalidades de backend para el flujo operativo de inspecciones.</p></div><div><span>Contexto</span><p>Un producto que debía funcionar bien en distintos dispositivos para acompañar una tarea de campo.</p></div></div>
-          <div class="flex flex-wrap gap-2 mt-6"><span class="tag">React.js</span><span class="tag">Python</span><span class="tag">Django</span><span class="tag">PostgreSQL</span></div>
-        </article>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding" id="skills">
-      <h2 class="font-h2 text-h2 text-white mb-12 flex items-center gap-4">
-        <span class="w-12 h-0.5 bg-tertiary"></span> Stack Tecnológico
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        <!-- Frontend -->
-        <div class="glass-card p-6 rounded-2xl hover:border-secondary/30 transition-all">
-          <h4 class="text-label-caps font-label-caps text-outline mb-4">Frontend</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">React</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">Vue.js</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">HTML5</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">CSS3</span>
-          </div>
-        </div>
-        <!-- Backend -->
-        <div class="glass-card p-6 rounded-2xl hover:border-primary/30 transition-all">
-          <h4 class="text-label-caps font-label-caps text-outline mb-4">Backend</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Node.js</span>
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Python</span>
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Django</span>
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Django REST Framework</span>
-          </div>
-        </div>
-        <!-- DB -->
-        <div class="glass-card p-6 rounded-2xl hover:border-tertiary/30 transition-all">
-          <h4 class="text-label-caps font-label-caps text-outline mb-4">Database</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-tertiary/10 text-tertiary text-sm px-2 py-1 rounded-md">PostgreSQL</span>
-            <span class="bg-tertiary/10 text-tertiary text-sm px-2 py-1 rounded-md">MongoDB</span>
-            <span class="bg-tertiary/10 text-tertiary text-sm px-2 py-1 rounded-md">MySQL</span>
-          </div>
-        </div>
-        <!-- DevOps -->
-        <div class="glass-card p-6 rounded-2xl hover:border-secondary/30 transition-all">
-          <h4 class="text-label-caps font-label-caps text-outline mb-4">DevOps</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">Docker</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">AWS</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">Linux</span>
-            <span class="bg-secondary/10 text-secondary text-sm px-2 py-1 rounded-md">Git</span>
-          </div>
-        </div>
-        <!-- Quality -->
-        <div class="glass-card p-6 rounded-2xl hover:border-primary/30 transition-all">
-          <h4 class="text-label-caps font-label-caps text-outline mb-4">Prácticas</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">APIs REST</span>
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Pruebas unitarias</span>
-            <span class="bg-primary/10 text-primary text-sm px-2 py-1 rounded-md">Pruebas E2E</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About & Values -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 class="font-h2 text-h2 text-white mb-8">Sobre mi enfoque</h2>
-          <p class="text-body-lg text-on-surface-variant mb-6">
-            Entiendo la ingeniería de software no solo como el acto de escribir código, sino como la creación de
-            productos que resuelven problemas reales de negocio.
-          </p>
-          <p class="text-body-lg text-on-surface-variant">
-            Como Ingeniero en Informática por la UNAJ, combino análisis, desarrollo y pruebas para entregar soluciones
-            técnicamente robustas y fáciles de usar.
-          </p>
-          <div class="mt-12 p-8 glass-card border-l-4 border-primary rounded-r-2xl">
-            <h4 class="font-bold text-white mb-2">Educación</h4>
-            <p class="text-on-surface font-medium">Ingeniería en Informática</p>
-            <p class="text-outline text-sm">Universidad Nacional Arturo Jauretche · 2025</p>
-          </div>
-        </div>
-        <div class="space-y-6">
-          <div class="glass-card p-8 rounded-3xl group hover:bg-primary/5 transition-all">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="material-symbols-outlined text-primary text-3xl" data-icon="code_blocks">code_blocks</span>
-              <h4 class="font-h3 text-h3 text-white">Código Mantenible</h4>
-            </div>
-            <p class="text-on-surface-variant">Priorizo la legibilidad y la arquitectura limpia para facilitar la
-              evolución del producto a largo plazo.</p>
-          </div>
-          <div class="glass-card p-8 rounded-3xl group hover:bg-secondary/5 transition-all">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="material-symbols-outlined text-secondary text-3xl" data-icon="speed">speed</span>
-              <h4 class="font-h3 text-h3 text-white">Escalabilidad Real</h4>
-            </div>
-            <p class="text-on-surface-variant">Diseño sistemas preparados para crecer, optimizando el rendimiento desde
-              las bases de datos hasta la interfaz.</p>
-          </div>
-          <div class="glass-card p-8 rounded-3xl group hover:bg-tertiary/5 transition-all">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="material-symbols-outlined text-tertiary text-3xl" data-icon="visibility">visibility</span>
-              <h4 class="font-h3 text-h3 text-white">Foco en UX</h4>
-            </div>
-            <p class="text-on-surface-variant">Un backend potente no sirve si la experiencia de usuario es deficiente.
-              Construyo interfaces intuitivas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="max-w-container-max mx-auto px-gutter mb-section-padding" id="contact">
-      <div class="glass-card rounded-[40px] p-12 md:p-20 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -mr-48 -mt-48"></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
-          <div>
-            <h2 class="font-h1 text-h1 text-white mb-6">Hablemos de tu próximo desafío</h2>
-            <p class="text-body-lg text-on-surface-variant mb-12">
-              Estoy abierto a oportunidades Full Stack y Software Engineering donde pueda aportar en productos,
-              integraciones, automatización y sistemas de negocio.
-            </p>
-            <div class="space-y-6">
-              <a class="flex items-center gap-4 text-on-surface hover:text-primary transition-colors" href="mailto:brian.claros@devecoop.com">
-                <span class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center">
-                  <span class="material-symbols-outlined" data-icon="mail">mail</span>
-                </span>
-                brian.claros@devecoop.com
-              </a>
-              <div class="flex gap-4">
-                <a class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary/20 transition-all"
-                  href="https://www.linkedin.com/in/brian-alejandro-claros-maldonado/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Brian Claros">
-                  <img alt="LinkedIn" class="w-6 h-6 grayscale hover:grayscale-0"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1tyYMcCMREdYJOpp5z6Uo9XhzvN2h-GooEXzgxZDzY5f0-RgGb6z8gtCOWoU_cj7xsZVL4YndZxq5SaCsYJXg6PzVhcPrZmwspJblRsxmTFDzyB93iTqVvlNFejL7CuW6mGPmw4BlTlBqUP8dK8ir3JOFLy_epfJMzNkGUqPszVsaT6NAfzdyqLTZmdS-SZ5vE8GsHXmessyOVkzoNSF-DGCYkILRYHSOt9nEl6xlZ6V-qB2cm-0aPxuKd_pLh6lkTYrwY93Luyw" />
-                </a>
-                <a class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center hover:bg-primary/20 transition-all"
-                  href="https://github.com/BrianClaros" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Brian Claros">
-                  <img alt="GitHub" class="w-6 h-6 grayscale hover:grayscale-0 invert"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjB98D_3yJww4WaX8JnEKmEN9fcroGeKTHJpltCcczxkpendFC752-OX6161JhF_j9Q8YSe-_IGyS5W-9vh8y58il6xasilF-ovW7LctKJ4lfN9jf2z-bobiYni50y8NnC6fi-XZFnA0otPiFEdplnUlnG7EhbftiE1J9GHP4eoHZDHkktbemvA-g61xgaE890aIgylSiHBhbd1IqNafGU_U83GXWucFlccLbzHJ-5OqNo4A2mYxuzOqUz-Iygf68Z78kddYBZPBY" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <form id="contact-form" class="space-y-6" action="https://formspree.io/f/xnjwvqko" method="POST">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="space-y-2">
-                <label class="font-label-caps text-label-caps text-outline px-1">NOMBRE</label>
-                <input name="name" required
-                  class="w-full bg-surface-container-lowest border-outline-variant/30 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
-                  placeholder="Nombre" type="text" />
-              </div>
-              <div class="space-y-2">
-                <label class="font-label-caps text-label-caps text-outline px-1">EMAIL</label>
-                <input name="email" required
-                  class="w-full bg-surface-container-lowest border-outline-variant/30 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
-                  placeholder="nombre@empresa.com" type="email" />
-              </div>
-            </div>
-            <div class="space-y-2">
-              <label class="font-label-caps text-label-caps text-outline px-1">MENSAJE</label>
-              <textarea name="message" required
-                class="w-full bg-surface-container-lowest border-outline-variant/30 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
-                placeholder="Contame el desafío o la oportunidad..." rows="4"></textarea>
-            </div>
-            <input type="hidden" name="subject" value="Nuevo mensaje desde portfolio" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <div id="form-status" class="hidden text-sm font-medium"></div>
-            <button type="submit"
-              class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:shadow-[0_0_25px_rgba(173,198,255,0.3)] transition-all">
-              Enviar Mensaje
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="w-full py-base bg-surface-container-low border-t border-outline-variant/20">
-    <div
-      class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter py-section-padding">
-      <div class="mb-8 md:mb-0">
-        <span class="font-h3 text-h3 text-on-surface block mb-2">Brian Alejandro Claros Maldonado</span>
-        <p class="font-label-caps text-label-caps text-on-surface-variant">© 2026 Brian Alejandro Claros Maldonado.</p>
-      </div>
-      <div class="flex gap-8">
-        <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
-          href="https://www.linkedin.com/in/brian-alejandro-claros-maldonado/">LinkedIn</a>
-        <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
-          href="https://github.com/BrianClaros">GitHub</a>
-      </div>
-    </div>
-  </footer>
-  <script src="assets/js/lottie-config.js" defer></script>
+<body>
+  <header class="wrap nav"><a class="brand" href="#top">BRIAN<i>_</i>CLAROS</a><nav class="nav-links"><a href="#experience">EXPERIENCIA</a><a href="#cases">CASOS</a><a href="#stack">STACK</a><a href="#contact">CONTACTO</a></nav><div class="nav-actions"><button class="lang-toggle" type="button" data-lang-toggle aria-label="Cambiar idioma">EN</button><a class="nav-cv" href="CV_Brian.pdf" download>CV ↓</a></div></header>
+  <main id="top" class="wrap">
+    <section class="hero"><div><span class="available"><i></i> DISPONIBLE PARA OPORTUNIDADES</span><p class="role-label">SOFTWARE ENGINEER · FULL-STACK &amp; AI INTEGRATIONS</p><h1>Python, TypeScript<br>y Django para<br><em>productos reales.</em></h1><p class="hero-copy">Construyo <strong>productos, integraciones y sistemas de negocio</strong> para banca, SaaS, travel y operaciones. Trabajo de extremo a extremo en backend, frontend e integraciones, con foco en escalabilidad, mantenibilidad y entrega orientada a negocio.</p><div class="actions"><a class="button" href="mailto:brianclarosmaldonado@gmail.com">CONTACTARME →</a><a class="button alt" href="#cases">VER CASOS</a></div></div><aside class="signal" aria-label="Composición gráfica de Brian Claros"><p class="signal-title">PRODUCT / AI INTEGRATIONS / 2018—NOW</p><div class="signal-bars"><i></i><i></i><i></i><i></i><i></i></div><strong class="signal-bc">BC</strong></aside></section>
+    <div class="metrics"><div class="metric"><b>+8</b><span>AÑOS DE EXPERIENCIA</span></div><div class="metric"><b>Miles</b><span>USUARIOS EN SALESQL</span></div><div class="metric"><b>4</b><span>CASOS SELECCIONADOS</span></div><div class="metric"><b>4</b><span>BANCA · SAAS · TRAVEL · OPS</span></div></div>
+    <section id="experience"><div class="section-head"><span class="eyebrow">01 / EXPERIENCIA</span><h2>Trayectoria en <em>productos con uso real.</em></h2></div><div class="timeline"><article class="job"><time class="period">MAR. 2026</time><div><h3>Full-Stack Software Engineer</h3><b>WhatsApp Business API Chatbot · Devecoop</b></div><p>Plataforma de chatbot para participantes: flujos por estados, reglas para registros, sorteos y validaciones, tareas asíncronas con Celery y Redis, y persistencia de contexto en PostgreSQL.</p></article><article class="job"><time class="period">OCT. 2025 — FEB. 2026</time><div><h3>Full-Stack Software Engineer</h3><b>Banco Rioja · Devecoop</b></div><p>Módulos internos de scoring, riesgo y evaluación de clientes, con control de acceso, trazabilidad, consistencia de datos, pruebas unitarias y end-to-end en un entorno bancario.</p></article><article class="job"><time class="period">MAY. 2020 — OCT. 2025</time><div><h3>Full-Stack Software Engineer</h3><b>SalesQL · Devecoop</b></div><p>Producto SaaS de prospección con extensión de Chrome usada por miles de usuarios: funcionalidades full-stack, migración de frontend, Stripe, performance, debugging y evolución de flujos críticos.</p></article><article class="job"><time class="period">MAY. — SEP. 2020</time><div><h3>Mobile Developer</h3><b>Deportify · Devecoop</b></div><p>Aplicación Android para reservas de canchas de fútbol, tenis y pádel; interfaces, flujos principales, validación funcional y ajustes de experiencia de usuario con React Native.</p></article><article class="job"><time class="period">NOV. 2019 — MAY. 2020</time><div><h3>Full-Stack Developer · PWA Lead</h3><b>FreePreTrip · Devecoop</b></div><p>PWA para inspecciones previas al viaje de autobuses escolares: operación en campo, soporte multidispositivo, backend, pruebas y colaboración en una arquitectura offline-first.</p></article><article class="job"><time class="period">AGO. — NOV. 2019</time><div><h3>Full-Stack Developer</h3><b>CoopApp · Devecoop</b></div><p>Aplicación para simplificar y automatizar procesos administrativos de cooperativas, trabajando sobre pantallas, flujos de usuario, backend, base de datos y pruebas.</p></article><article class="job"><time class="period">FEB. 2018 — AGO. 2019</time><div><h3>Backend / Full-Stack Developer</h3><b>Betterez · Devecoop</b></div><p>Plataforma de reservas y emisión de tickets de transporte internacional: integraciones, pruebas, optimización, refactorización de código legacy y migraciones de datos.</p></article><article class="job"><time class="period">FEB. — DIC. 2016</time><div><h3>Software Developer Intern</h3><b>Secretaría de Asuntos Docentes</b></div><p>Funciones y paneles de administración para un sistema de preguntas frecuentes de los municipios de Quilmes, Avellaneda y Berazategui.</p></article></div></section>
+    <section id="cases"><div class="section-head"><span class="eyebrow">02 / CASOS</span><h2>La evidencia está en <em>lo construido.</em></h2></div><div class="cases"><article class="case main"><div><span class="case-num">01 / SAAS · 2020—2025</span><h3>SalesQL Extension</h3><p>Extensión de Chrome para búsqueda y extracción de contactos desde LinkedIn, utilizada por miles de usuarios. Funcionalidades full-stack, migración de frontend, Stripe para suscripciones y pagos, debugging productivo y optimización de rendimiento.</p><div class="case-diagram"><span>EXTENSIÓN</span><b>→</b><span>DJANGO</span><b>→</b><span>STRIPE</span></div></div><div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Vue.js</span><span class="tag">JavaScript</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div></article><article class="case side"><div><span class="case-num">02 / BANCA · 2025—2026</span><h3>Banco Rioja</h3><p>Módulos internos de scoring, gestión de riesgo y evaluación de clientes. Lógica de negocio, interfaces server-side, autenticación, permisos, trazabilidad, pruebas y ajustes de performance en producción.</p></div><div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">HTMX</span><span class="tag">Unit &amp; E2E Testing</span></div></article><article class="case wide"><div><span class="case-num">03 / AUTOMATIZACIÓN · 2026</span><h3>WhatsApp Business API Chatbot</h3><p>Plataforma conversacional para participantes de concursos. Implementé flujos por estados, reglas para registros, sorteos y validaciones, procesamiento asíncrono y persistencia del contexto de conversación.</p><div class="case-diagram"><span>WHATSAPP API</span><b>→</b><span>CELERY / REDIS</span><b>→</b><span>POSTGRESQL</span></div></div><div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Celery</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span></div></article><article class="case narrow"><div><span class="case-num">04 / TRAVEL · 2019—2020</span><h3>FreePreTrip</h3><p>PWA offline-first para digitalizar inspecciones previas al viaje de autobuses escolares, diseñada para operación en campo y conectividad limitada.</p></div><div class="tags"><span class="tag">React</span><span class="tag">Python</span><span class="tag">Django</span><span class="tag">PWA</span></div></article></div></section>
+    <section id="stack"><div class="section-head"><span class="eyebrow">03 / STACK</span><h2>Herramientas para <em>entregar y mantener.</em></h2></div><div class="stack"><article><h3>BACKEND &amp; APIS</h3><p>Python · Django · Django REST Framework · Node.js · Celery · Redis</p></article><article><h3>FRONTEND</h3><p>TypeScript · JavaScript · React · Vue.js · HTMX · React Native</p></article><article><h3>DATOS &amp; ENTREGA</h3><p>PostgreSQL · MongoDB · MySQL · Docker · Linux · Git · Testing</p></article></div></section>
+    <section><div class="section-head"><span class="eyebrow">04 / ENFOQUE</span><h2>El software tiene que seguir siendo <em>útil mañana.</em></h2></div><div class="about"><p>Combino análisis, desarrollo y pruebas para convertir necesidades de negocio en funcionalidades concretas. Priorizo <strong>claridad, mantenimiento y una experiencia que acompañe el trabajo real.</strong> Actualmente profundizo en AI-enabled products, agentic workflows, APIs, observabilidad y cloud.</p><div class="principles"><article><b>CÓDIGO MANTENIBLE</b><span>Decisiones pensadas para la evolución del producto.</span></article><article><b>RENDIMIENTO PRAGMÁTICO</b><span>Atención a consultas, flujos y estabilidad.</span></article><article><b>AI INTEGRATIONS</b><span>Profundización en productos AI-enabled y workflows con agentes.</span></article><article><b>FORMACIÓN</b><span>Ingeniero en Informática · UNAJ, 2025. Técnico en Programación · EEST N.º 4, 2016.</span></article></div></div></section>
+    <section id="contact"><div class="contact"><div><span class="eyebrow">05 / CONTACTO</span><h2>¿Construimos el próximo <em>sistema?</em></h2><p>Estoy abierto a roles de AI Product Engineer, Full-Stack AI, Solutions Engineer y Senior Software Engineer, especialmente en equipos que valoren ownership, integraciones, automatización y productos escalables.</p></div><div class="contact-links"><a href="mailto:brianclarosmaldonado@gmail.com">EMAIL ↗</a><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brian-alejandro-claros-maldonado/">LINKEDIN ↗</a><a target="_blank" rel="noopener noreferrer" href="https://github.com/BrianClaros">GITHUB ↗</a></div></div></section>
+  </main><footer class="wrap footer">© 2026 BRIAN ALEJANDRO CLAROS MALDONADO · INGENIERO EN INFORMÁTICA</footer>
   <script>
-    (function () {
-      const form = document.getElementById('contact-form');
-      const status = document.getElementById('form-status');
-      if (!form) return;
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        status.classList.remove('hidden');
-        status.textContent = 'Enviando...';
-        status.classList.remove('text-red-500','text-green-500');
-        try {
-          const endpoint = form.action;
-          const data = new FormData(form);
-          const res = await fetch(endpoint, {
-            method: 'POST',
-            body: data,
-            headers: { 'Accept': 'application/json' }
+    (() => {
+      const translations = {
+        'EXPERIENCIA': 'EXPERIENCE', 'CASOS': 'CASES', 'STACK': 'STACK', 'CONTACTO': 'CONTACT',
+        'DISPONIBLE PARA OPORTUNIDADES': 'AVAILABLE FOR OPPORTUNITIES',
+        'SOFTWARE ENGINEER · FULL-STACK & AI INTEGRATIONS': 'SOFTWARE ENGINEER · FULL-STACK & AI INTEGRATIONS',
+        'Python, TypeScript': 'Python, TypeScript',
+        'y Django para': 'and Django for',
+        'productos reales.': 'real products.',
+        'Construyo': 'I build',
+        'productos, integraciones y sistemas de negocio': 'products, integrations, and business systems',
+        'para banca, SaaS, travel y operaciones. Trabajo de extremo a extremo en backend, frontend e integraciones, con foco en escalabilidad, mantenibilidad y entrega orientada a negocio.': 'for banking, SaaS, travel, and operations. I work end-to-end across backend, frontend, and integrations, focusing on scalability, maintainability, and business-driven delivery.',
+        'CONTACTARME →': 'CONTACT ME →', 'VER CASOS': 'VIEW CASES',
+        'AÑOS DE EXPERIENCIA': 'YEARS OF EXPERIENCE', 'USUARIOS EN SALESQL': 'SALESQL USERS', 'CASOS SELECCIONADOS': 'SELECTED CASE STUDIES', 'BANCA · SAAS · TRAVEL · OPS': 'BANKING · SAAS · TRAVEL · OPS',
+        '01 / EXPERIENCIA': '01 / EXPERIENCE', 'Trayectoria en': 'Experience across', 'productos con uso real.': 'products with real users.',
+        'MAR. 2026': 'MAR. 2026', 'Full-Stack Software Engineer': 'Full-Stack Software Engineer', 'WhatsApp Business API Chatbot · Devecoop': 'WhatsApp Business API Chatbot · Devecoop',
+        'Plataforma de chatbot para participantes: flujos por estados, reglas para registros, sorteos y validaciones, tareas asíncronas con Celery y Redis, y persistencia de contexto en PostgreSQL.': 'Chatbot platform for participants: state-based flows, registration, draw, and validation rules, asynchronous tasks with Celery and Redis, and PostgreSQL conversation-context persistence.',
+        'OCT. 2025 — FEB. 2026': 'OCT. 2025 — FEB. 2026', 'Banco Rioja · Devecoop': 'Banco Rioja · Devecoop',
+        'Módulos internos de scoring, riesgo y evaluación de clientes, con control de acceso, trazabilidad, consistencia de datos, pruebas unitarias y end-to-end en un entorno bancario.': 'Internal scoring, risk, and customer-evaluation modules with access control, traceability, data consistency, unit tests, and end-to-end tests in a banking environment.',
+        'MAY. 2020 — OCT. 2025': 'MAY 2020 — OCT 2025', 'SalesQL · Devecoop': 'SalesQL · Devecoop',
+        'Producto SaaS de prospección con extensión de Chrome usada por miles de usuarios: funcionalidades full-stack, migración de frontend, Stripe, performance, debugging y evolución de flujos críticos.': 'SaaS prospecting product with a Chrome extension used by thousands of users: full-stack features, frontend migration, Stripe, performance, debugging, and evolution of critical workflows.',
+        'MAY. — SEP. 2020': 'MAY — SEP 2020', 'Mobile Developer': 'Mobile Developer', 'Deportify · Devecoop': 'Deportify · Devecoop',
+        'Aplicación Android para reservas de canchas de fútbol, tenis y pádel; interfaces, flujos principales, validación funcional y ajustes de experiencia de usuario con React Native.': 'Android app for football, tennis, and padel court bookings; interfaces, primary flows, functional validation, and UX adjustments with React Native.',
+        'NOV. 2019 — MAY. 2020': 'NOV 2019 — MAY 2020', 'Full-Stack Developer · PWA Lead': 'Full-Stack Developer · PWA Lead', 'FreePreTrip · Devecoop': 'FreePreTrip · Devecoop',
+        'PWA para inspecciones previas al viaje de autobuses escolares: operación en campo, soporte multidispositivo, backend, pruebas y colaboración en una arquitectura offline-first.': 'PWA for pre-trip school-bus inspections: field operations, multi-device support, backend, testing, and collaboration on an offline-first architecture.',
+        'AGO. — NOV. 2019': 'AUG — NOV 2019', 'Full-Stack Developer': 'Full-Stack Developer', 'CoopApp · Devecoop': 'CoopApp · Devecoop',
+        'Aplicación para simplificar y automatizar procesos administrativos de cooperativas, trabajando sobre pantallas, flujos de usuario, backend, base de datos y pruebas.': 'Application to simplify and automate cooperative administrative processes, covering screens, user flows, backend, database, and testing.',
+        'FEB. 2018 — AGO. 2019': 'FEB 2018 — AUG 2019', 'Backend / Full-Stack Developer': 'Backend / Full-Stack Developer', 'Betterez · Devecoop': 'Betterez · Devecoop',
+        'Plataforma de reservas y emisión de tickets de transporte internacional: integraciones, pruebas, optimización, refactorización de código legacy y migraciones de datos.': 'International transport ticketing and booking platform: integrations, testing, optimization, legacy-code refactoring, and data migrations.',
+        'FEB. — DIC. 2016': 'FEB — DEC 2016', 'Software Developer Intern': 'Software Developer Intern', 'Secretaría de Asuntos Docentes': 'Secretaría de Asuntos Docentes',
+        'Funciones y paneles de administración para un sistema de preguntas frecuentes de los municipios de Quilmes, Avellaneda y Berazategui.': 'Features and administration panels for a FAQ system used by the Quilmes, Avellaneda, and Berazategui municipalities.',
+        '02 / CASOS': '02 / CASE STUDIES', 'La evidencia está en': 'Evidence lives in', 'lo construido.': 'what was built.',
+        '01 / SAAS · 2020—2025': '01 / SAAS · 2020—2025', 'SalesQL Extension': 'SalesQL Extension',
+        'Extensión de Chrome para búsqueda y extracción de contactos desde LinkedIn, utilizada por miles de usuarios. Funcionalidades full-stack, migración de frontend, Stripe para suscripciones y pagos, debugging productivo y optimización de rendimiento.': 'Chrome extension for searching and extracting LinkedIn contact data, used by thousands of users. Full-stack features, frontend migration, Stripe subscriptions and payments, production debugging, and performance optimization.',
+        'EXTENSIÓN': 'EXTENSION', '02 / BANCA · 2025—2026': '02 / BANKING · 2025—2026', 'Banco Rioja': 'Banco Rioja',
+        'Módulos internos de scoring, gestión de riesgo y evaluación de clientes. Lógica de negocio, interfaces server-side, autenticación, permisos, trazabilidad, pruebas y ajustes de performance en producción.': 'Internal scoring, risk-management, and customer-evaluation modules. Business logic, server-side interfaces, authentication, permissions, traceability, testing, and production performance adjustments.',
+        '03 / AUTOMATIZACIÓN · 2026': '03 / AUTOMATION · 2026', 'WhatsApp Business API Chatbot': 'WhatsApp Business API Chatbot',
+        'Plataforma conversacional para participantes de concursos. Implementé flujos por estados, reglas para registros, sorteos y validaciones, procesamiento asíncrono y persistencia del contexto de conversación.': 'Conversational platform for contest participants. Implemented state-based flows, registration, draw, and validation rules, asynchronous processing, and conversation-context persistence.',
+        '04 / TRAVEL · 2019—2020': '04 / TRAVEL · 2019—2020',
+        'PWA offline-first para digitalizar inspecciones previas al viaje de autobuses escolares, diseñada para operación en campo y conectividad limitada.': 'Offline-first PWA to digitize school-bus pre-trip inspections, designed for field operations and limited connectivity.',
+        '03 / STACK': '03 / STACK', 'Herramientas para': 'Tools to', 'entregar y mantener.': 'ship and maintain.', 'BACKEND & APIS': 'BACKEND & APIS', 'FRONTEND': 'FRONTEND', 'DATOS & ENTREGA': 'DATA & DELIVERY',
+        '04 / ENFOQUE': '04 / FOCUS', 'El software tiene que seguir siendo': 'Software should stay', 'útil mañana.': 'useful tomorrow.',
+        'Combino análisis, desarrollo y pruebas para convertir necesidades de negocio en funcionalidades concretas. Priorizo': 'I combine analysis, development, and testing to turn business needs into concrete functionality. I prioritize',
+        'claridad, mantenimiento y una experiencia que acompañe el trabajo real.': 'clarity, maintainability, and an experience that supports real work.',
+        'Actualmente profundizo en AI-enabled products, agentic workflows, APIs, observabilidad y cloud.': 'I am currently deepening my focus on AI-enabled products, agentic workflows, APIs, observability, and cloud.',
+        'CÓDIGO MANTENIBLE': 'MAINTAINABLE CODE', 'Decisiones pensadas para la evolución del producto.': 'Decisions designed for product evolution.', 'RENDIMIENTO PRAGMÁTICO': 'PRAGMATIC PERFORMANCE', 'Atención a consultas, flujos y estabilidad.': 'Attention to queries, workflows, and stability.', 'AI INTEGRATIONS': 'AI INTEGRATIONS', 'Profundización en productos AI-enabled y workflows con agentes.': 'Deepening expertise in AI-enabled products and agentic workflows.', 'FORMACIÓN': 'EDUCATION', 'Ingeniero en Informática · UNAJ, 2025. Técnico en Programación · EEST N.º 4, 2016.': 'Computer Engineer · UNAJ, 2025. Programming Technician · EEST No. 4, 2016.',
+        '05 / CONTACTO': '05 / CONTACT', '¿Construimos el próximo': 'Should we build the next', 'sistema?': 'system?',
+        'Estoy abierto a roles de AI Product Engineer, Full-Stack AI, Solutions Engineer y Senior Software Engineer, especialmente en equipos que valoren ownership, integraciones, automatización y productos escalables.': 'I am open to AI Product Engineer, Full-Stack AI, Solutions Engineer, and Senior Software Engineer roles, especially in teams that value ownership, integrations, automation, and scalable products.',
+        '© 2026 BRIAN ALEJANDRO CLAROS MALDONADO · INGENIERO EN INFORMÁTICA': '© 2026 BRIAN ALEJANDRO CLAROS MALDONADO · COMPUTER ENGINEER'
+      };
+      const button = document.querySelector('[data-lang-toggle]');
+      let language = 'es';
+      const translate = (lang) => {
+        document.querySelectorAll('body *').forEach((element) => {
+          [...element.childNodes].filter((node) => node.nodeType === Node.TEXT_NODE).forEach((node) => {
+            const source = node.datasetSource || node.nodeValue;
+            if (!node.datasetSource) node.datasetSource = source;
+            const key = source.trim();
+            if (lang === 'en' && translations[key]) node.nodeValue = source.replace(key, translations[key]);
+            if (lang === 'es') node.nodeValue = source;
           });
-          if (res.ok) {
-            status.classList.add('text-green-500');
-            status.textContent = 'Gracias — tu mensaje fue enviado.';
-            form.reset();
-          } else {
-            let msg = 'Error al enviar el formulario.';
-            try { const json = await res.json(); if (json && json.error) msg = json.error; } catch (err) {}
-            status.classList.add('text-red-500');
-            status.textContent = msg;
-          }
-        } catch (err) {
-          status.classList.add('text-red-500');
-          status.textContent = 'Error de red. Intenta nuevamente.';
-        }
-      });
+        });
+        document.documentElement.lang = lang;
+        button.textContent = lang === 'es' ? 'EN' : 'ES';
+        button.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
+        document.title = lang === 'es' ? 'Brian Claros | Full-Stack & AI Integrations' : 'Brian Claros | Full-Stack & AI Integrations';
+      };
+      button.addEventListener('click', () => { language = language === 'es' ? 'en' : 'es'; translate(language); });
     })();
   </script>
-</body>
-
-</html>
+</body></html>
