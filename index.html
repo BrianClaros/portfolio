@@ -1030,6 +1030,7 @@
         '© 2026 BRIAN ALEJANDRO CLAROS MALDONADO · INGENIERO EN INFORMÁTICA': '© 2026 BRIAN ALEJANDRO CLAROS MALDONADO · COMPUTER ENGINEER'
       };
       const button = document.querySelector('[data-lang-toggle]');
+      const cvLink = document.querySelector('.nav-cv');
       let language = 'es';
       const translate = (lang) => {
         document.querySelectorAll('body *').forEach((element) => {
@@ -1042,6 +1043,7 @@
           });
         });
         document.documentElement.lang = lang;
+        cvLink.href = lang === 'en' ? 'CV_Brian_en.pdf' : 'CV_Brian.pdf';
         button.textContent = lang === 'es' ? 'EN' : 'ES';
         button.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
         document.title = 'Brian Claros | Senior Full Stack Developer · AI';

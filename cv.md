@@ -91,19 +91,18 @@ Experiencia en productos de **banca/fintech, SaaS, travel, mobile, extensiones C
 
 ---
 
-### SalesQL — *Desarrollador Full Stack*
+### Bot de WhatsApp — *Desarrollador Full Stack*
 
-**May 2020 – Oct 2025 | Cooperativa de Trabajo Devecoop Ltda.**
+**Mar 2026 | Cooperativa de Trabajo Devecoop Ltda.**
 
-**Stack:** Vue.js · JavaScript · Python · Django · PostgreSQL · Docker · Stripe
+**Stack:** Python · Django · WhatsApp Business API · Celery · Redis · PostgreSQL
 
-- Desarrollé e implementé nuevas funcionalidades en una extensión de Chrome y plataforma SaaS para búsqueda y extracción de correos desde LinkedIn, utilizada por **miles de usuarios**.
-- Trabajé tanto en frontend como backend, manteniendo y evolucionando funcionalidades críticas del producto.
-- Integré **Stripe** como pasarela de pagos, incluyendo suscripciones, webhooks y procesos de conciliación.
-- Optimicé tiempos de carga y respuesta mediante refactoring y mejoras en consultas.
-- Realicé debugging y corrección de errores sobre un sistema productivo de largo plazo.
-- Participé en la migración y modernización del frontend.
-- Mejoré estabilidad, mantenibilidad, performance y experiencia de usuario.
+- Participé en el desarrollo de una plataforma conversacional integrada con **WhatsApp Business API**.
+- Implementé lógica de negocio para gestión de participantes, validación de datos y control de flujos conversacionales por estados.
+- Desarrollé flujos de interacción y procesamiento de eventos.
+- Implementé procesamiento asíncrono mediante **Celery y Redis**.
+- Diseñé lógica para registros, sorteos, validaciones y persistencia de datos.
+- Administré persistencia en PostgreSQL y almacenamiento de contexto conversacional en cache.
 
 ---
 
@@ -123,18 +122,32 @@ Experiencia en productos de **banca/fintech, SaaS, travel, mobile, extensiones C
 
 ---
 
-### Bot de WhatsApp — *Desarrollador Full Stack*
+### SalesQL — *Desarrollador Full Stack*
 
-**Mar 2026 | Cooperativa de Trabajo Devecoop Ltda.**
+**May 2020 – Oct 2025 | Cooperativa de Trabajo Devecoop Ltda.**
 
-**Stack:** Python · Django · WhatsApp Business API · Celery · Redis · PostgreSQL
+**Stack:** Vue.js · JavaScript · Python · Django · PostgreSQL · Docker · Stripe
 
-- Participé en el desarrollo de una plataforma conversacional integrada con **WhatsApp Business API**.
-- Implementé lógica de negocio para gestión de participantes, validación de datos y control de flujos conversacionales por estados.
-- Desarrollé flujos de interacción y procesamiento de eventos.
-- Implementé procesamiento asíncrono mediante **Celery y Redis**.
-- Diseñé lógica para registros, sorteos, validaciones y persistencia de datos.
-- Administré persistencia en PostgreSQL y almacenamiento de contexto conversacional en cache.
+- Desarrollé e implementé nuevas funcionalidades en una extensión de Chrome y plataforma SaaS para búsqueda y extracción de correos desde LinkedIn, utilizada por **miles de usuarios**.
+- Trabajé tanto en frontend como backend, manteniendo y evolucionando funcionalidades críticas del producto.
+- Integré **Stripe** como pasarela de pagos, incluyendo suscripciones, webhooks y procesos de conciliación.
+- Optimicé tiempos de carga y respuesta mediante refactoring y mejoras en consultas.
+- Realicé debugging y corrección de errores sobre un sistema productivo de largo plazo.
+- Participé en la migración y modernización del frontend.
+- Mejoré estabilidad, mantenibilidad, performance y experiencia de usuario.
+
+---
+
+### Deportify — *Mobile Developer*
+
+**May 2020 – Sep 2020 | Argentina**
+
+**Stack:** React Native · JavaScript · Android
+
+- Desarrollé una aplicación mobile orientada a simplificar la reserva de canchas de fútbol, tenis y pádel.
+- Construí interfaces y flujos principales utilizando **React Native para Android**.
+- Participé en el desarrollo inicial del producto, validación funcional y mejoras de experiencia de usuario.
+- Colaboré en la definición e implementación de flujos de reserva y navegación mobile.
 
 ---
 
@@ -149,19 +162,6 @@ Experiencia en productos de **banca/fintech, SaaS, travel, mobile, extensiones C
 - Implementé y probé nuevas funcionalidades backend.
 - Trabajé sobre la integración entre frontend, backend y base de datos.
 - Participé en análisis funcional, implementación y testing.
-
----
-
-### Deportify — *Mobile Developer*
-
-**May 2020 – Sep 2020 | Argentina**
-
-**Stack:** React Native · JavaScript · Android
-
-- Desarrollé una aplicación mobile orientada a simplificar la reserva de canchas de fútbol, tenis y pádel.
-- Construí interfaces y flujos principales utilizando **React Native para Android**.
-- Participé en el desarrollo inicial del producto, validación funcional y mejoras de experiencia de usuario.
-- Colaboré en la definición e implementación de flujos de reserva y navegación mobile.
 
 ---
 
